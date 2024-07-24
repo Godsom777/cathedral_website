@@ -63,9 +63,29 @@
 }
 
 .navbar ul li a:hover {
-    color: rgb(192, 15, 15);
     text-decoration: none;
     font-weight: 700;
+}
+
+.navbar-nav li:hover{
+    background-color: red; /* Changes the background of the li to red on hover */
+}
+
+.navbar-nav li:hover a {
+    color: white !important; /* Changes the text color to white on hover */
+}
+
+
+
+/* Hide dropdown menu by default */
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+}
+
+/* Display dropdown menu on hover of parent li */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    
 }
 
 
