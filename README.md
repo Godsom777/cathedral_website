@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+The official website of the Catholic Archdiocese of Owerri, made with React TypeScript Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Assumpta.owarch.net
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+![Owarch - Google Chrome 24_07_2024 23_28_45](https://github.com/user-attachments/assets/937155c0-08f8-4a20-83aa-8c2bff9edbe0)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+![cathedral_website_README md at main · Godsom777_cathedral_website - Google Chrome 24_07_2024 23_34_17](https://github.com/user-attachments/assets/ef6fe1f1-8818-439c-9a8d-20596dbb1b40)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![cathedral_website_README md at main · Godsom777_cathedral_website - Google Chrome 24_07_2024 23_34_58](https://github.com/user-attachments/assets/894ffdb4-a02e-4ffa-bb15-2610ad5708de)
+
+
