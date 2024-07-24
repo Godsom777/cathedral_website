@@ -1,0 +1,183 @@
+.Section3 .row::-webkit-scrollbar {
+    display: block;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+Section3 {
+    min-height: 50vh;
+}
+
+.Section3 .row {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(116, 116, 116) transparent;
+}
+
+.Section3 .card-block {
+    overflow: hidden;
+    background-color: black;
+}
+
+.card-block img {
+    z-index: 1;
+    opacity: 0.3;
+
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: opacity 0.5s ease;
+
+}
+
+.Section3 .card-block h3 {
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+.card-block:hover h3 {
+    transform: scale(1.2);
+}
+
+.Section3 .card-block:hover img {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.Section3 {
+    max-width: 100vw;
+    position: relative;
+}
+
+.bigText_description {
+    font-size: 0.8rem !important;
+    margin: 1rem;
+    font-family: Poppins, sans-serif;
+}
+
+/* For Chrome, Safari, and Opera */
+.Section3::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.Section3::-webkit-scrollbar-track {
+    background: #fbd2d2;
+}
+
+.Section3::-webkit-scrollbar-thumb {
+    background-color: #ff6a00e9;
+    border-radius: 20px;
+}
+
+.Section3::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* For Firefox */
+
+.card-block button {
+    z-index: 99;
+    background-color: #ff6a00a5;
+    color: white;
+    opacity: 1 !important;
+    border-radius: 0;
+}
+
+.arrow {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #fa6d2c;
+    color: #cb2929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Center vertically */
+
+}
+
+.arrow.left {
+    left: 0;
+    color: white;
+
+}
+
+.arrow.right {
+    right: 0;
+    color: white;
+
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .center-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .bigText_description {
+        font-size: 0.6rem !important;
+    }
+
+    .Section3 {
+        max-width: 100vw;
+        position: relative;
+    }
+
+ 
+
+    .Section3 {
+        background-color: #55555569;
+        overflow: auto;
+    }
+
+
+    .Section3 .row {
+        padding-left: 2rem !important;
+        padding: 2rem !important;
+    }
+
+    .Section3 .card-block {
+       background-color: #ffffff;
+       height: 10px;
+       margin: 1rem;
+    }
+
+    .card-block img {
+        z-index: 1;
+        opacity: 0.5;
+    
+     
+    
+    }
+
+ 
+}

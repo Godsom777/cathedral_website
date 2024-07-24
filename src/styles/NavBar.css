@@ -1,0 +1,98 @@
+.nav-item {
+    list-style: none;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+      
+        flex-direction: column;
+      
+    }
+    .container-fluid {
+        margin: 0 !important;
+        display: flex;
+        flex-direction: row;
+        padding: 0 !important;
+    }
+
+    button{
+        background: transparent;
+    }
+    .nav-item:not(:last-child) {
+        margin-bottom: 0px;
+        
+    }
+    .navbar-brand {
+        width: 100px !important;
+        width: 100px !important;
+
+
+       
+    }
+    
+    .navbar-nav .ml-auto {
+        margin-left: 0 !important;
+      }
+
+      .donate {
+        padding-right: 0rem;
+    }
+
+    nav a img {
+        width: 0rem !important;
+        align-self: left;
+    }
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.navbar ul li a {
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    font-weight: 500;
+    animation: ease-in-out all .6s;
+}
+
+.navbar ul li a:hover {
+    color: rgb(192, 15, 15);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+nav a img {
+    width: 5rem !important;
+    align-self: center;
+}
+
+.myLarge-btn {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    border-radius: 0;
+    font-family: Poppins, sans-serif;
+    background-color: rgb(203, 28, 28);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.myLarge-btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
+    border: 0.07rem solid red;
+    border-radius: .7rem;
+}
+
+.donate {
+    padding-right: 1.5rem;
+}

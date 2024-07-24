@@ -1,0 +1,531 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import 'animate.css';
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+:root {
+  font-family: Inter, system-ui, Poppins, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(28, 28, 28, 0.87);
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+a {
+  font-weight: 500;
+  color: #3b3b3b;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #f25353;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  background-color: rgb(255, 255, 255);
+}
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.4em;
+  font-weight: 400;
+  padding-bottom: 0.2em;
+  line-height: 1.1;
+}
+p {
+  font-family: 'Poppins', sans;
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+ 
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+header.navbar {
+  min-width: 100vw !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.603) !important;
+  z-index: 3000;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+header nav.container-fluid {
+  padding-left: 15vw !important;
+}
+.carousel slide {
+  position: relative;
+  /* other styles */
+}
+.carousel-container #carouselExampleIndicators {
+  min-width: 100vw !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  margin: 0 auto;
+  z-index: 1;
+}
+.carousel-container .carousel-item {
+  height: 120vh !important;
+}
+/* CAROUSEL AND TABS */
+.TodayInTheChurch {
+  background-color: #ffffffaa;
+  max-width: 45vw;
+  border: 0.2px #ffffff solid;
+  border-radius: 0;
+  overflow: hidden;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  padding: 40px;
+  justify-content: flex-start;
+  text-align: left;
+}
+.carousel-container {
+  height: 200vh !important;
+  overflow: visible;
+}
+.carousel-caption {
+  position: absolute;
+  left: 10vw !important;
+  top: 45vh !important;
+  text-align: left;
+  max-width: 35rem;
+  text-shadow: #1a1a1a 0 0 0.4rem;
+  color: white !important;
+}
+/* ..............Hero Tabs...................... */
+.Hero-contents {
+  display: flex;
+  flex-direction: row;
+  /* default value; can be omitted */
+  justify-content: space-between;
+  min-width: 80vw;
+  top: 105vh;
+  left: 10vw;
+  position: absolute;
+  z-index: 1000;
+}
+.darkContainer {
+background-color: rgb(22, 22, 22);
+min-width: 100vw;
+}
+.tab-link {
+  color: rgb(62, 62, 62) !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  max-width: 20% !important;
+  font-size: 13px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 500 !important;
+  text-wrap: nowrap !important;
+  text-align: left !important;
+  z-index: 10 !important;
+  transition: all .6s ease-in !important;
+}
+.tab-link.Mui-selected {
+  color: red !important;
+  font-weight: 400 !important;
+  transition: all .6s ease-in !important;
+}
+.mini-carousel-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.mini-carousel > div {
+  flex: 0 0 auto;
+  margin-right: 30px;
+  /* adjust spacing between slides as needed */
+  height: auto !important;
+  width: 200px !important;
+}
+.mini-carousel {
+  display: flex;
+}
+.slide-container {
+  border: 3px solid #ff6a00a5;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+  /* adjust spacing between slides as needed */
+}
+.slide-column {
+  flex: 1;
+  padding-top: 15%;
+  padding: 10%;
+  /* adjust padding as needed */
+}
+.scrollable-container {
+  text-align: left;
+  padding-top: 5%;
+  overflow: auto;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+}
+.scrollable-container::-webkit-scrollbar {
+  width: 0px !important;
+  /* For Chrome, Safari, and Opera */
+}
+.tab-contents {
+  text-align: left !important;
+  font-weight: 400 !important;
+}
+.miniTab-h1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+.miniTab-h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.miniTab-h2 {
+  font-family: 'Merriweather', serif !important;
+  font-size: 12px;
+}
+.red {
+  color: rgb(255, 59, 59);
+}
+.myLarge-btn1 {
+  margin-top: 30px !important;
+  padding: 12px !important;
+  background-color: #d76411;
+  transition: all .3s ease-in-out;
+  color: white;
+  border-radius: 0 !important;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.myLarge-btn1:hover {
+  color: #d76411;
+  border: 1px solid #ff6a0084;
+  transition: all .3s ease-in-out;
+  font-weight: 600;
+  background-color: transparent !important;
+}
+.myLarge-btn2:hover {
+  color: #d71111;
+  border: 1px solid #d71111;
+  font-weight: 600;
+  background-color: transparent !important;
+}
+.myLarge-btn2 {
+  margin-top: 30px !important;
+  padding: 12px !important;
+  background-color: #d71111;
+  transition: all .5s ease-in-out;
+  color: white;
+  border-radius: 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.button-row {
+  display: flex;
+  justify-content: space-between !important;
+  transition: all .3s ease-in-out;
+}
+.myLarge-btn3 {
+  min-width: 120px;
+  display: absolute;
+  align-content: center;
+  color: white;
+  background-color: #d72b11;
+  padding: 30px;
+  margin-top: auto;
+}
+.myLarge-btn4 {
+  min-width: 120px;
+  display: absolute;
+  align-content: center;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+
+/* ///////////////////////////// */
+
+@media (max-width: 768px) {
+  header.navbar {
+    max-width: 10vw !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+ 
+  }
+  
+  header nav.container-fluid {
+    padding-left: 0vw !important;
+    width: 80%;
+  }
+  .carousel slide {
+    position: absolute;
+    /* other styles */
+  }
+  .carousel-container #carouselExampleIndicators {
+    min-width: 100vw !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin: auto 0;
+    z-index: 1;
+  }
+ 
+  .carousel-container {
+    height: 300vh !important;
+   
+  }
+  .carousel-caption {
+    position: absolute;
+    text-align: left;
+    max-width: 35rem;
+    font-size: 14px;
+    text-shadow: #1a1a1a 0 0 0.4rem;
+    z-index: 100;
+    color: rgb(26, 26, 26) !important;
+  }
+  .carousel-item {
+    height: 100vh !important;
+  }
+
+  .carousel-item img {
+    height: auto;
+    padding-top:15vh;
+    width: 20vw;
+    z-index: 99;
+  }
+
+  .Hero-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 25rem;
+    
+    position: absolute;
+    z-index: 1000;
+  }
+  .TodayInTheChurch {
+    background-color: #ffffffaa;
+    max-width: 85vw !important;
+    border: 0.2px #ffffff solid;
+    border-radius: 0;
+    overflow: hidden;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    padding: 2px;
+    justify-content:center;
+    text-align: left;
+  }
+
+  .TodayInTheChurch h4{
+    font-size: 14px;
+    padding: 0;
+    margin:0;
+
+  }
+
+  .tab-link {
+    
+    font-size: 8px !important;
+    padding: 0;
+    margin:0;
+
+   
+  }
+
+  .mini-carousel {
+    
+  }
+
+  .tab-contents {
+    text-align: left !important;
+    font-weight: 400 !important;
+  }
+  .miniTab-h1 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .miniTab-h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .miniTab-h2 {
+    font-family: 'Merriweather', serif !important;
+    font-size: 10px;
+  }
+
+  .scrollable-container {
+    text-align: left;
+    padding-top: 5%;
+    overflow: auto;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+  }
+  .mini-carousel-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .mini-carousel {
+    flex: 0 0 0;
+    border: 3px solid #ff6a00a5;
+
+    margin-right: 0px;
+    width: 10rem !important;
+    /* adjust spacing between slides as needed */
+  }
+  .slide-container {
+
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid #ff6a00a5;
+    margin-right: 40px;
+    height: 5rem !important;
+    width: 2rem !important;
+    /* adjust spacing between slides as needed */
+  }
+
+  .myLarge-btn1 {
+    margin-top: 10px !important;
+    padding: 8px !important;
+    background-color: #d76411;
+    transition: all .3s ease-in-out;
+    color: white;
+    border-radius: 0 !important;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .myLarge-btn1:hover {
+    color: #d76411;
+    border: 1px solid #ff6a0084;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+    background-color: transparent !important;
+  }
+  .myLarge-btn2:hover {
+    color: #d78111;
+    border: 1px solid #d78111;
+    font-weight: 600;
+    background-color: transparent !important;
+  }
+  .myLarge-btn2 {
+    margin-top: 10px !important;
+    padding: 8px !important;
+    background-color: #d71111;
+    transition: all .5s ease-in-out;
+    color: white;
+    border-radius: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    transition: all .3s ease-in-out;
+  }
+  .myLarge-btn3 {
+   font-size: 12px;
+    display: absolute;
+    align-content: center;
+    color: white;
+    background-color: #d72b11;
+    padding: 10px;
+    margin-top: auto;
+  }
+  .hero-social-icons{
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around !important;
+  }
+
+  .hero-social-media-follow {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px !important;
+  }
+
+  .hero-social-icons a{
+
+    padding-left: 0.7rem;
+  }
+
+  .myLarge-btn4 {
+    min-width: 120px;
+    display: absolute;
+    align-content: center;
+    border-radius: 0;
+    background-color: #ffffff;
+  }
+
+
+}
