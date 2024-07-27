@@ -27,7 +27,6 @@ const NavBar: React.FC = () => {
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a className="dropdown-item" href="#">School Chaplancies</a></li>
                                     <li><a className="dropdown-item" href="#">St. Mulumba Villa Annex 2</a></li>
-                           
                                 </ul>
                             </li>
                             <li className="nav-item">
